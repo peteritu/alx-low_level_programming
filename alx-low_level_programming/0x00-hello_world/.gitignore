@@ -1,0 +1,30 @@
+#!/bin/bash
+../../.dockerenv
+../README.md
+../../alx-system_engineering-devops/
+# Add more files/directories as needed
+  ../../.dockerenv
+        ../README.md
+        ../../alx-system_engineering-devops/
+        ../../alx-zero_day/
+        ../../bin
+        ../../dev/
+        ../../etc/
+        ../../lib
+        ../../lib32
+        ../../lib64
+        ../../libx32
+        ../../opt/
+        ../../proc/
+        ../../root/.bashrc
+        ../../root/.cache/
+        ../../root/.gitconfig
+        ../../root/.profile
+        ../../root/.viminfo
+        ../../root/alx-low_level_programming/
+        ../../run/
+        ../../sbin
+        ../../sys/
+        ../../tmp/
+        ../../usr/
+        ../../var/
