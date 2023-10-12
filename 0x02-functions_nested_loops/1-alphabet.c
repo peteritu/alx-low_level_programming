@@ -1,4 +1,5 @@
 #include "main.h"
+void print_alphabet_x10(void); /* Function prototype for print_alphabet_x10 */
 
 /**
 * print_alphabet - Prints the lowercase alphabet followed by a new line
