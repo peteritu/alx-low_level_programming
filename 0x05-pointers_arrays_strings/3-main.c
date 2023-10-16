@@ -1,7 +1,10 @@
 #include "main.h"
-#include "main.h"
-#include "_putchar.h" // Include the _putchar.h header
 
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
 char *str;
