@@ -1,8 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdio.h>
+#include <stdio.h> /* Include standard I/O functions */
 
-void print_rev(char *s);
+/* Function prototype for rev_string */
+void rev_string(char *s);
 
-#endif
+#endif /* MAIN_H */
