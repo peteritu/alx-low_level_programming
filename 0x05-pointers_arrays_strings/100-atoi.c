@@ -1,14 +1,17 @@
 #include "main.h"
+#include <stdio.h>
+#include <limits.h>
 
 /**
- * _atoi - Converts a string to an integer.
- * @s: The input string.
- *
- * Description: This function takes an input string and converts it to an integer.
- * It handles leading whitespace, sign characters, and integer overflow.
- *
- * Return: The integer value parsed from the string, or INT_MAX/INT_MIN on overflow.
- */
+* _atoi - Converts a string to an integer.
+* @s: The input string.
+*
+* Description:
+* This function takes an input string and converts it to an integer.
+* It handles leading whitespace, sign characters, and integer overflow.
+*
+* Return: The integer value parsed from the string, or INT_MAX/INT_MIN on overflow.
+*/
 int _atoi(char *s)
 {
 int result = 0;
@@ -38,11 +41,11 @@ if (result > (INT_MAX - (s[i] - '0')) / 10)
 {
 if (sign == 1)
 {
-return (INT_MAX);
+return INT_MAX;
 }
 else
 {
-return (INT_MIN);
+return INT_MIN;
 }
 }
 result = result * 10 + (s[i] - '0');
@@ -50,6 +53,6 @@ i++;
 }
 
 /* Apply the sign */
-return (sign * result);
+return sign * result;
 }
 
