@@ -15,12 +15,12 @@
 */
 int main(void)
 {
-time_t t;
-srand((unsigned)time(&t)); /* Initialize the random number generator with the current time */
-
 char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 int charset_length = PASSWORD_LENGTH;
 char password[PASSWORD_LENGTH + 1]; /* +1 for the null terminator */
+
+time_t t;
+srand((unsigned)time(&t)); /* Initialize the random number generator with the current time */
 
 int i;
 for (i = 0; i < PASSWORD_LENGTH; i++)
@@ -33,6 +33,6 @@ password[PASSWORD_LENGTH] = '\0'; /* Null-terminate the password */
 
 printf("%s\n", password); /* Print the generated password */
 
-return (0);
+return 0;
 }
 
