@@ -1,10 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* Function prototype for _strcat function */
-char *_strcat(char *dest, char *src);
+#include <stdio.h>
 
-/* Add other function prototypes for subsequent tasks here */
+/* Function prototype for _strncpy function */
+char *_strncpy(char *dest, char *src, int n);
 
 #endif /* MAIN_H */
 
