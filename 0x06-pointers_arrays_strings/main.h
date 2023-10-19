@@ -1,10 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdio.h>
-
-/* Function prototype for _strcat */
-char *_strcat(char *dest, char *src);
+/* Function prototype for reverse_array function */
+void reverse_array(int *a, int n);
 
 #endif /* MAIN_H */
 
