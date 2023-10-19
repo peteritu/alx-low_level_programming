@@ -3,7 +3,6 @@
 /**
  * cap_string - Capitalize words in a string.
  * @str: The string to capitalize.
- *
  * Return: A pointer to the modified string.
  */
 char *cap_string(char *str)
@@ -30,6 +29,6 @@ first_char = 1;
 }
 }
 
-return str;
+return (str);
 }
 
