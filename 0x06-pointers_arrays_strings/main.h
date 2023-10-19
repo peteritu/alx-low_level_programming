@@ -1,7 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-char *_strncat(char *dest, char *src, int n);
+#include <stdio.h>
+
+/* Function prototype for _strcat */
+char *_strcat(char *dest, char *src);
 
 #endif /* MAIN_H */
 
