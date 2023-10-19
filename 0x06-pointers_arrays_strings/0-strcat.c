@@ -25,6 +25,6 @@ src++;
 
 *dest = '\0'; /* Add a null terminator at the end */
 
-return ptr;
+return (ptr);  /* Return a pointer to the resulting string dest */
 }
 
