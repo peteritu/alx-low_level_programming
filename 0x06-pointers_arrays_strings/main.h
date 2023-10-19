@@ -1,10 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdio.h>  // You may need to include other libraries as needed
+/* Function prototypes */
+char *_strcat(char *dest, char *src);
 
-/* Function prototype for _strncat */
-char *_strncat(char *dest, char *src, int n);
+/* Custom putchar function declaration */
+int _putchar(char c);
 
 #endif /* MAIN_H */
 
