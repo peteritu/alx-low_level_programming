@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * main - check the code
@@ -8,21 +7,44 @@
  */
 int main(void)
 {
-char s1[98] = "Hello ";
-char s2[] = "World!\n";
-char *ptr;
+    char s1[98] = "Hello ";
+    char s2[] = "World!\n";
+    char *ptr;
 
-printf("%s\n", s1);
-printf("%s", s2);
-ptr = _strncat(s1, s2, 1);
-printf("%s\n", s1);
-printf("%s", s2);
-printf("%s\n", ptr);
-ptr = _strncat(s1, s2, 1024);
-printf("%s", s1);
-printf("%s", s2);
-printf("%s", ptr);
+    for (int i = 0; s1[i] != '\0'; i++)
+        _putchar(s1[i]);
 
-return (0);
+    for (int i = 0; s2[i] != '\0'; i++)
+        _putchar(s2[i]);
+
+    ptr = _strncat(s1, s2, 1);
+
+    for (int i = 0; s1[i] != '\0'; i++)
+        _putchar(s1[i]);
+
+    for (int i = 0; s2[i] != '\0'; i++)
+        _putchar(s2[i]);
+
+    while (*ptr)
+    {
+        _putchar(*ptr);
+        ptr++;
+    }
+
+    ptr = _strncat(s1, s2, 1024);
+
+    for (int i = 0; s1[i] != '\0'; i++)
+        _putchar(s1[i]);
+
+    for (int i = 0; s2[i] != '\0'; i++)
+        _putchar(s2[i]);
+
+    while (*ptr)
+    {
+        _putchar(*ptr);
+        ptr++;
+    }
+
+    return (0);
 }
 
