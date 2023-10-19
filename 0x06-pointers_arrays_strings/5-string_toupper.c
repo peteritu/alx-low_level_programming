@@ -19,6 +19,6 @@ if (*str >= 'a' && *str <= 'z')
 str++;
 }
 
-return ptr;
+return (ptr);
 }
 
