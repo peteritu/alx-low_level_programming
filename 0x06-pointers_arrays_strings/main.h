@@ -1,11 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <unistd.h>
-#include <string.h>
-
-/* Custom function to print a character to stdout */
-void _putchar(char c);
+char *_strncat(char *dest, char *src, int n);
 
 #endif /* MAIN_H */
 

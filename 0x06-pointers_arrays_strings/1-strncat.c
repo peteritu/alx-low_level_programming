@@ -1,33 +1,30 @@
-#include "main.h"
-#include <stdio.h> // Include the <stdio.h> header for printf
-
 /**
- * _strncat - Concatenates two strings with a maximum of n bytes from src.
- * @dest: The destination string.
- * @src: The source string.
- * @n: The maximum number of bytes to concatenate from src.
- *
- * Return: A pointer to the resulting string dest.
- */
-char *_strncat(char *dest, char *src, int n);
-
-int main(void)
+* _strncat - Concatenates two strings using at most n bytes from src.
+* @dest: The destination string.
+* @src: The source string.
+* @n: The maximum number of bytes to use from src.
+*
+* Return: A pointer to the resulting string `dest`.
+*/
+char *_strncat(char *dest, char *src, int n)
 {
-    char s1[98] = "Hello ";
-    char s2[] = "World!\n";
-    char *ptr;
+int dest_len = 0;
+int src_len = 0;
 
-    printf("%s\n", s1);
-    printf("%s", s2);
-    ptr = _strncat(s1, s2, 1);
-    printf("%s\n", s1);
-    printf("%s", s2);
-    printf("%s\n", ptr);
-    ptr = _strncat(s1, s2, 1024); // Copying more characters than in s2
-    printf("%s", s1);
-    printf("%s", s2);
-    printf("%s", ptr);
+while (dest[dest_len] != '\0')
+dest_len++;
 
-    return (0);
+while (src_len < n && src[src_len] != '\0')
+src_len++;
+
+for (int i = 0; i < src_len; i++)
+{
+dest[dest_len] = src[i];
+dest_len++;
+}
+
+dest[dest_len] = '\0';
+
+return dest;
 }
 
