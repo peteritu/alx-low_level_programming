@@ -1,10 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdio.h>
+#include <unistd.h>
+#include <string.h>
 
-/* Function prototype for _strcmp function */
-int _strcmp(char *s1, char *s2);
+/* Custom function to print a character to stdout */
+void _putchar(char c);
 
 #endif /* MAIN_H */
 
