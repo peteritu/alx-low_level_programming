@@ -1,8 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* Function prototype for reverse_array function */
-void reverse_array(int *a, int n);
+/* Function to change all lowercase letters of a string to uppercase */
+char *string_toupper(char *str);
 
 #endif /* MAIN_H */
 

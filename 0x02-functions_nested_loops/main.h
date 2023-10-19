@@ -1,16 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+/* Function prototype for the custom _putchar function */
 int _putchar(char c);
+
+/* Add other function prototypes or macros here if needed */
 
 #endif /* MAIN_H */
 
-#ifndef MAIN_H
-#define MAIN_H
-
-int _putchar(char c);
-
-void print_alphabet(void);
-void print_alphabet_x10(void); // Function prototype for print_alphabet_x10
-
-#endif /* MAIN_H */
