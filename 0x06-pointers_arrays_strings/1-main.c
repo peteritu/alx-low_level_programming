@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
-* main - Entry point for testing the _strncat function.
-*
-* Return: Always 0.
-*/
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
 char s1[98] = "Hello ";
