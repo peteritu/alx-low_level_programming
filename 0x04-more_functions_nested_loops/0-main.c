@@ -1,18 +1,34 @@
 #include "main.h"
-#include <stdio.h>
+#include <unistd.h>
 
 /**
-* main - check the code.
-*
-* Return: Always 0.
-*/
+ * main - Check the _isupper function.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-char c;
+    char c;
+    int result;
 
-c = 'A';
-printf("%c: %d\n", c, _isupper(c));
-c = 'a';
-printf("%c: %d\n", c, _isupper(c));
-return (0);
+    c = 'A';
+    result = _isupper(c);
+    write(1, &c, 1); /* Writes the character to stdout */
+    write(1, ": ", 2); /* Writes a colon and a space */
+    if (result == 1)
+        write(1, "1\n", 2); /* Writes "1" followed by a newline */
+    else
+        write(1, "0\n", 2); /* Writes "0" followed by a newline */
+
+    c = 'a';
+    result = _isupper(c);
+    write(1, &c, 1); /* Writes the character to stdout */
+    write(1, ": ", 2); /* Writes a colon and a space */
+    if (result == 1)
+        write(1, "1\n", 2); /* Writes "1" followed by a newline */
+    else
+        write(1, "0\n", 2); /* Writes "0" followed by a newline */
+
+    return (0);
 }
+
