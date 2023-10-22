@@ -1,10 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdio.h>
+/* Function to print a character to the standard output */
+int _putchar(char c);
 
-/* Function prototype for the main function */
-int main(void);
+/* Function prototype for print_triangle */
+void print_triangle(int size);
 
 #endif /* MAIN_H */
 
