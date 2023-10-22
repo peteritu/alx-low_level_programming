@@ -1,10 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <unistd.h>
-
-int mul(int a, int b);
-char *itoa(int num);
+void print_numbers(void);
+int _putchar(char c);
 
 #endif /* MAIN_H */
 
