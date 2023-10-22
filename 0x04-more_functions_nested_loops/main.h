@@ -1,10 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <unistd.h>
+/* Function prototype for print_line function */
+void print_line(int n);
 
-/* Function prototypes */
-void more_numbers(void);
+/* Function prototype for _putchar function */
 int _putchar(char c);
 
 #endif /* MAIN_H */
