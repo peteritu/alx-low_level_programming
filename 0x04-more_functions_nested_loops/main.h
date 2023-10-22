@@ -1,7 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-int _isdigit(int c);
+#include <unistd.h>
+
+int mul(int a, int b);
+char *itoa(int num);
 
 #endif /* MAIN_H */
 
