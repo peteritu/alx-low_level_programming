@@ -1,11 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* Function prototype for print_square function */
-void print_square(int size);
+#include <stdio.h>
 
-/* Function prototype for _putchar function */
-int _putchar(char c);
+/* Function prototype for the main function */
+int main(void);
 
 #endif /* MAIN_H */
 
