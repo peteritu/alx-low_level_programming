@@ -1,8 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* Function prototype */
-char *_strchr(char *s, char c);
+/* Function prototypes */
+unsigned int _strspn(char *s, char *accept);
+unsigned int _strlen(char *s);
 
 #endif /* MAIN_H */
 
