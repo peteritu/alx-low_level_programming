@@ -1,43 +1,44 @@
 #include "main.h"
 #include <stdio.h>
 
-void print_diagsums(int *a, int size);
+/**
+ * print_diagsums - Prints the sum of the two diagonals of a square matrix.
+ * @a: Pointer to the square matrix of integers.
+ * @size: The size of the square matrix.
+ */
+void print_diagsums(int *a, int size)
+{
+int sum1 = 0, sum2 = 0;
+
+for (int i = 0; i < size; i++)
+{
+/* Sum of the main diagonal (top-left to bottom-right) */
+sum1 += a[i * size + i];
+/* Sum of the secondary diagonal (top-right to bottom-left) */
+sum2 += a[i * size + (size - 1 - i)];
+}
+
+printf("%d, %d\n", sum1, sum2);
+}
 
 int main(void)
 {
-int matrix[3][3] = {
-{1, 2, 3},
-{4, 5, 6},
-{7, 8, 9}
+int c3[3][3] = {
+{0, 1, 5},
+{10, 11, 12},
+{1000, 101, 102},
 };
-int size = 3;
-int flat_matrix[size * size];
-int i, j, k = 0;
+int c5[5][5] = {
+{0, 1, 5, 12124, 1234},
+{10, 11, 12, 123521, 12512},
+{1000, 101, 102, 12545, 214543435},
+{100, 1012451, 11102, 12545, 214543435},
+{10, 12401, 10452, 11542545, 1214543435},
+};
 
-for (i = 0; i < size; i++) {
-for (j = 0; j < size; j++) {
-flat_matrix[k] = matrix[i][j];
-k++;
-}
-}
-
-print_diagsums(flat_matrix, size);
+print_diagsums((int *)c3, 3);
+print_diagsums((int *)c5, 5);
 
 return (0);
-}
-
-void print_diagsums(int *a, int size)
-{
-int i;
-int sum_main = 0;
-int sum_secondary = 0;
-
-for (i = 0; i < size; i++) {
-sum_main += a[i * size + i]; /* Main diagonal */
-sum_secondary += a[i * size + (size - 1 - i)]; /* Secondary diagonal */
-}
-
-printf("Sum of the main diagonal: %d\n", sum_main);
-printf("Sum of the secondary diagonal: %d\n", sum_secondary);
 }
 
