@@ -1,28 +1,27 @@
 #include "main.h"
 
+/* Helper function to print a single digit */
+void print_digit(int n)
+{
+_putchar(n + '0');
+}
+
 /**
-* print_number - Prints an integer using _putchar
+* print_number - Main recursive function to print an integer
 * @n: The integer to be printed
 */
 void print_number(int n)
 {
 if (n < 0)
 {
-_putchar('-');  /* Handle negative numbers */
-n = -n;         /* Make it positive for further processing */
-}
-
-if (n == 0)
-{
-_putchar('0');  /* Print 0 */
-return;
+_putchar('-');
+n = -n;
 }
 
 if (n / 10 != 0)
 {
-print_number(n / 10);  /* Recursively print the remaining digits */
+print_number(n / 10);
 }
-
-_putchar(n % 10 + '0');  /* Print the last digit */
+print_digit(n % 10);
 }
 
