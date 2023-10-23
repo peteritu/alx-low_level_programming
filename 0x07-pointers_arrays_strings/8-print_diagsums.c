@@ -9,11 +9,12 @@ void print_diagsums(int *a, int size)
 {
 int sum_primary = 0;
 int sum_secondary = 0;
+int i;
 
-for (int i = 0; i < size; i++)
+for (i = 0; i < size; i++)
 {
-sum_primary += a[i * size + i];               /* Sum of the main diagonal */
-sum_secondary += a[i * size + (size - i - 1)]; /* Sum of the secondary diagonal */
+sum_primary += a[i * size + i];
+sum_secondary += a[i * size + (size - i - 1)];
 }
 
 printf("%d, %d\n", sum_primary, sum_secondary);
