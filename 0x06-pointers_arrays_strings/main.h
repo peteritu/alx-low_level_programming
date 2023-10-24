@@ -3,11 +3,12 @@
 
 #include <stdio.h>
 
-/* Function prototypes (if needed) */
-/* Example: int myFunction(int a, int b); */
+/* Declare the main function */
+int main(void);
 
-/* Global variable declarations (if needed) */
-/* Example: extern int globalVariable; */
+/* Declare the array a and pointer p (if you want to make them global) */
+int a[5];
+int *p;
 
 #endif /* MAIN_H */
 
