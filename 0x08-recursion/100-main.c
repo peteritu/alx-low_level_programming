@@ -1,23 +1,40 @@
+#include <unistd.h>
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code
+ * _putchar - Write a character to stdout
+ * @c: The character to write
+ */
+void _putchar(char c)
+{
+    write(1, &c, 1);
+}
+
+/**
+ * main - Entry point
  *
- * Return: Always 0.
+ * Return: Always 0
  */
 int main(void)
 {
     int r;
 
     r = is_palindrome("level");
-    printf("%d\n", r);
+    _putchar(r + '0');
+    _putchar('\n');
+
     r = is_palindrome("redder");
-    printf("%d\n", r);
+    _putchar(r + '0');
+    _putchar('\n');
+
     r = is_palindrome("test");
-    printf("%d\n", r);
+    _putchar(r + '0');
+    _putchar('\n');
+
     r = is_palindrome("step on no pets");
-    printf("%d\n", r);
+    _putchar(r + '0');
+    _putchar('\n');
+
     return (0);
 }
 

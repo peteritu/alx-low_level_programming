@@ -3,41 +3,32 @@
 
 /**
  * is_palindrome - Check if a string is a palindrome
- * @s: Pointer to a string
+ * @s: The input string
  *
- * Return: (1) if the string is a palindrome, (0) otherwise
+ * Return: (1) if it's a palindrome, (0) otherwise
  */
 int is_palindrome(char *s)
 {
+char *start = s;
+char *end = s;
+
 if (s == NULL)
-return (1);
+return (0);
 
-int len = 0;
-while (s[len] != '\0')
-len++;
+while (*end != '\0')
+end++;
 
-return (is_palindrome_helper(s, 0, len - 1));
-}
+end--;
 
-/**
- * is_palindrome_helper - Helper function for is_palindrome
- * @s: Pointer to a string
- * @start: Starting index
- * @end: Ending index
- *
- * Return: (1) if the string is a palindrome, (0) otherwise
- */
-int is_palindrome_helper(char *s, int start, int end)
+while (start < end)
 {
-if (start >= end)
-return (1);
-
-if (s[start] != s[end])
+if (*start != *end)
 return (0);
 
 start++;
 end--;
+}
 
-return (is_palindrome_helper(s, start, end));
+return (1);
 }
 
