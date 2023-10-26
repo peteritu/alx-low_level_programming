@@ -1,9 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdio.h>
-
-int is_prime_number(int n);
+int is_palindrome(char *s);
+int is_palindrome_helper(char *s, int start, int end);
 
 #endif /* MAIN_H */
 
