@@ -1,7 +1,4 @@
-#ifndef MAIN_H
-#define MAIN_H
-
-#include <stdio.h>
+#include "main.h"
 
 /**
  * factorial - Compute the factorial of a number.
@@ -9,7 +6,13 @@
  *
  * Return: The factorial of n, or -1 if n is negative.
  */
-int factorial(int n);
-
-#endif /* MAIN_H */
+int factorial(int n)
+{
+if (n < 0)
+return (-1);
+else if (n == 0 || n == 1)
+return (1);
+else
+return (n * factorial(n - 1));
+}
 
