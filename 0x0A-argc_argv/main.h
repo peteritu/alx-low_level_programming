@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int is_positive_integer(const char *str);
+int main(int argc, char *argv[]);
 
 #endif /* MAIN_H */
 
