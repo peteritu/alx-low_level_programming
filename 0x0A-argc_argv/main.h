@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int multiply(int num1, int num2);
+int is_positive_integer(const char *str);
 
 #endif /* MAIN_H */
 
