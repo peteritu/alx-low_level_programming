@@ -3,7 +3,8 @@
 
 #include <stdlib.h>
 
-void free_grid(int **grid, int height);
+/* Function prototype for argstostr */
+char *argstostr(int ac, char **av);
 
 #endif /* MAIN_H */
 
