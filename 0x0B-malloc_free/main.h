@@ -3,8 +3,8 @@
 
 #include <stdlib.h>
 
-/* Function prototype for str_concat */
-char *str_concat(char *s1, char *s2);
+int **alloc_grid(int width, int height);
+void print_grid(int **grid, int width, int height);
 
 #endif /* MAIN_H */
 
