@@ -17,7 +17,7 @@ int i;
 if (ac == 0 || av == NULL)
 return (NULL);
 
-total_length = 0;
+total_length = 1;
 current_position = 0;
 
 for (i = 0; i < ac; i++)
@@ -27,10 +27,10 @@ while (av[i][arg_length] != '\0')
 {
 arg_length++;
 }
-total_length += arg_length + 1; /* +1 for the newline character */
+total_length += arg_length + 1;
 }
 
-result = (char *)malloc(total_length *sizeof(char));
+result = (char *)malloc(total_length * sizeof(char));
 if (result == NULL)
 return (NULL);
 
@@ -46,7 +46,7 @@ arg_length++;
 result[current_position] = '\n';
 current_position++;
 }
-result[current_position] = '\0'; /* Null-terminate the string */
+result[current_position] = '\0';
 
 return (result);
 }
