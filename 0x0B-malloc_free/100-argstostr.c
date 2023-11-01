@@ -30,7 +30,7 @@ arg_length++;
 total_length += arg_length + 1;
 }
 
-result = (char *)malloc(total_length * sizeof(char));
+result = (char *)malloc(total_length *sizeof(char));
 if (result == NULL)
 return (NULL);
 
