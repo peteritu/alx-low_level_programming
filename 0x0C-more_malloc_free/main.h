@@ -2,9 +2,12 @@
 #define MAIN_H
 
 #include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 
-/* Function prototype for string_nconcat */
-char *string_nconcat(char *s1, char *s2, unsigned int n);
+/* Function prototypes */
+void *_calloc(unsigned int nmemb, unsigned int size);
+void simple_print_buffer(char *buffer, unsigned int size);
 
 #endif /* MAIN_H */
 
