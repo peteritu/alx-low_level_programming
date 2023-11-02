@@ -16,7 +16,7 @@ if (min > max)
 return (NULL);
 
 size = max - min + 1;
-result = (int *)malloc(size * sizeof(int));
+result = (int *)malloc(size *sizeof(int));
 
 if (result == NULL)
 return (NULL);
