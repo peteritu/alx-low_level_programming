@@ -52,7 +52,7 @@ num1 = strtoul(num1_str, NULL, 10);
 num2 = strtoul(num2_str, NULL, 10);
 
 /* Perform the multiplication */
-result = num1 * num2;
+result = num1 *num2;
 
 /* Print the result */
 printf("%lu\n", result);
