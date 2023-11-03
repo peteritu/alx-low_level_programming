@@ -4,11 +4,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Function prototype for _realloc */
-void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
-
-/* Function prototype for simple_print_buffer */
-void simple_print_buffer(char *buffer, unsigned int size);
+/* Function prototypes */
+int is_valid_number(char *str);
+int main(int argc, char *argv[]);
 
 #endif /* MAIN_H */
 
