@@ -5,6 +5,9 @@
 * @array: Array of integers.
 * @size: Size of the array.
 * @action: Function to execute on each element.
+*
+* Description: If 'array' and 'action' are not NULL, this function iterates
+* through the array and applies the provided 'action' function to each element.
 */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
