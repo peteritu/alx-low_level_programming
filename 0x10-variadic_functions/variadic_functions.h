@@ -3,7 +3,18 @@
 
 #include <stdarg.h>
 
-void print_strings(const char *separator, const unsigned int n, ...);
+/**
+ * struct format - Format structure
+ * @type: The format specifier
+ * @f: The function associated with the format specifier
+ */
+typedef struct format
+{
+	char type;
+	void (*f)(va_list);
+} format_t;
+
+void print_all(const char * const format, ...);
 
 #endif /* VARIADIC_FUNCTIONS_H */
 
